@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="CSS/css.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        @media (min-width: 1051px) {
+            .caixa {
+                width: 1000px;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 1050px) {
+            .caixa {
+                width: 900px;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 955px) {
+            .caixa {
+                width: 600px;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 660px) {
+            .caixa {
+                width: 440px;
+                margin: auto;
+            }
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    </style>
 </head>
+
 <body>
-    
+
+    <div class="caixa">
+
+        <img id="logoBemVindo" src="IMGs/Bem-vindoLogo.png">
+
+        <div id="app">
+
+            <div id="auth">
+
+                <div class="caixa02">
+
+                    <p id="Registrar">
+                        Novo Usuário?
+                        <button class="botaoCadastrar" onclick="RealizarCadastro()">Cadastre-se</button>
+                    </p>
+
+                    <form id="FrmAutentica">
+                        <h3 id="FrmAutenticaTitulo">Controle de Acesso</h3>
+
+                        <div class="inputWithIcon">
+                            <input type="email" placeholder="Digite seu Email" id="email" class="camposDigitar">
+
+                            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                        </div>
+
+                        <br><br>
+
+                        <div class="inputWithIcon">
+                            <input type="password" placeholder="Digite sua Senha" id="senha" class="camposDigitar">
+
+                            <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+                        </div>
+
+                        <br><br>
+
+                        <button type="submit" class="botaoAcessar" id="FrmAutenticaSubmit">Acessar</button>
+                    </form>
+
+                    <p id="Acessar" class="IniOculta">
+                        Já possui um cadastro?
+                        <button class="botaoCadastrar" onclick="RealizarAcesso()">Acessar</button>
+                    </p>
+
+                    <div id="ServidoresExternos">
+                        <p>Conecte-se com:</p>
+
+                        <p id="AcessarComServidorExterno">
+                            <img src="IMGs/google_logo.png" alt="Logotipo da google" width="37.5" height="37.5"
+                                onclick="LoginGoogle()">
+
+                            <img src="IMGs/ImgGitHub.png" alt="Logotipo GitHub" width="37.5" height="37.5"
+                                onclick="LoginGitHub()">
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

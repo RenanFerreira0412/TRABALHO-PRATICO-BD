@@ -1,3 +1,101 @@
 body {
     background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
 }
+
+.caixa{
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.camposDigitar {
+    border: solid 1px black;
+    padding: 10px;
+    width: 22em;
+}
+
+input:focus { 
+    outline:none;
+    border-color:dodgerBlue;
+    box-shadow:0 0 2px dodgerBlue;
+}
+
+.botaoAcessar {
+    background-color: #c2e59c;
+    border: 1px solid #c2e59c;
+    width: 10em;
+    border-radius: 5em;
+    padding: 14px;
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+ }
+
+ .inputWithIcon input[type="email"], input[type="password"] {
+    padding-left: 40px;
+  }
+
+  .inputWithIcon {
+    position: relative;
+  }
+  
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    padding: 9px 8px;
+    color: black;
+    transition: 0.3s;
+  }
+
+  .inputWithIcon input[type="email"]:focus + i, input[type="password"]:focus + i {
+    color: dodgerBlue;
+  }
+
+  .IniOculta {
+    display: none;
+}
+
+#ServidoresExternos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4px;
+    font-family: 'Pacifico', cursive;
+}
+
+#AcessarComServidorExterno{
+    cursor: pointer;
+}
+
+.botaoCadastrar{
+    font-size: 12px;
+    border: dodgerBlue 1px solid;
+    margin: 0 10px;
+    background-color: dodgerBlue;
+    padding: 5px ;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Pacifico', cursive;
+}
+
+#Registrar{
+    font-family: 'Pacifico', cursive;
+    margin-left: 8em;
+}
+
+
+  
+  
+ 
