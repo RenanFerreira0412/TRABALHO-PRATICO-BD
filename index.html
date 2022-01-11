@@ -7,71 +7,21 @@
     <link rel="stylesheet" href="CSS/css.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <style>
-        @media (min-width: 1051px) {
-            .caixa {
-                width: 1000px;
-                margin: auto;
-            }
-        }
-
-        @media (max-width: 1050px) {
-            .caixa {
-                width: 900px;
-                margin: auto;
-            }
-        }
-
-        @media (max-width: 955px) {
-            .caixa {
-                width: 600px;
-                margin: auto;
-            }
-        }
-
-        @media (max-width: 660px) {
-            .caixa {
-                width: 440px;
-                margin: auto;
-            }
-        }
-
-        @media (max-width: 955px) {
-            .caixa {
-                display: flex;
-                flex-wrap: wrap
-            }
-        }
-
-        @media (max-width: 660px) {
-            #logoBemVindo {
-                width: 450px;
-                height: 450px;
-            }
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-    </style>
 </head>
 
 <body>
 
-    <div class="caixa">
+    <div class="flex">
 
-        <div>
-            <img id="logoBemVindo" src="IMGs/Bem-vindoLogoComUsers.png">
-        </div>
+        <div class="caixa">
 
-        <div id="app">
+            <div>
+                <img id="logoBemVindo" src="IMGs/Bem-vindoLogoComUsers.png">
+            </div>
 
-            <div id="auth">
+            <div id="app">
 
-                <div class="caixa02">
-
-                    <p id="Registrar">
-                        Novo Usuário?
-                        <button class="botaoCadastrar" onclick="RealizarCadastro()">Cadastre-se</button>
-                    </p>
+                <div id="auth">
 
                     <form id="FrmAutentica">
                         <h3 id="FrmAutenticaTitulo">Controle de Acesso</h3>
@@ -95,10 +45,15 @@
                         <button type="submit" class="botaoAcessar" id="FrmAutenticaSubmit">Acessar</button>
                     </form>
 
-                    <p id="Acessar" class="IniOculta">
+                    <div id="Acessar" class="IniOculta">
                         Já possui um cadastro?
-                        <button class="botaoCadastrar" onclick="RealizarAcesso()">Acessar</button>
-                    </p>
+                        <p class="botaoCadastrar" onclick="RealizarAcesso()">Acessar</p>
+                    </div>
+
+                    <div id="Registrar">
+                        <p>Não possui cadastro?</p>
+                        <p class="botaoCadastrar" onclick="RealizarCadastro()">Cadastre-se</p>
+                    </div>
 
                     <div id="ServidoresExternos">
                         <p>Conecte-se com:</p>
@@ -113,9 +68,9 @@
                     </div>
 
                 </div>
-
             </div>
         </div>
+
     </div>
 </body>
 
