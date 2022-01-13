@@ -21,6 +21,10 @@
 
             <div id="app">
 
+                <div id="Carregando">
+                    <img src="IMGs/loading_gif.gif" alt="Imagem de carregamento">
+                </div>
+
                 <div id="auth">
 
                     <form id="FrmAutentica">
@@ -45,14 +49,14 @@
                         <button type="submit" class="botaoAcessar" id="FrmAutenticaSubmit">Acessar</button>
                     </form>
 
-                    <div id="Acessar" class="IniOculta">
-                        Já possui um cadastro?
-                        <p class="botaoCadastrar" onclick="RealizarAcesso()">Acessar</p>
-                    </div>
-
                     <div id="Registrar">
                         <p>Não possui cadastro?</p>
                         <p class="botaoCadastrar" onclick="RealizarCadastro()">Cadastre-se</p>
+                    </div>
+
+                    <div id="Acessar" class="IniOculta">
+                        Já possui um cadastro?
+                        <p class="botaoCadastrar" onclick="RealizarAcesso()">Acessar</p>
                     </div>
 
                     <div id="ServidoresExternos">
@@ -72,6 +76,22 @@
         </div>
 
     </div>
+
+    <!--RECURSOS DO FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+    <!--RECURSO DA AUTENTICAÇÃO-->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+
+    <!--MEUS ARQUIVOS JAVASCRIPT-->
+    <script src="JS/firebase.js"></script>
+    <script src="JS/util.js"></script>
+    <script src="JS/autentica.js"></script>
+    
+
 </body>
 
 </html>
