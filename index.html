@@ -49,15 +49,16 @@
                         <button type="submit" class="botaoAcessar" id="FrmAutenticaSubmit">Acessar</button>
                     </form>
 
-                    <div id="Registrar">
-                        <p>Não possui cadastro?</p>
-                        <p class="botaoCadastrar" onclick="RealizarCadastro()">Cadastre-se</p>
-                    </div>
+                    <p id="Registrar">
+                        Não possui cadastro?
+                        <button class="botaoCadastrar" onclick="RealizarCadastro()">Cadastrar uma conta</button>
+                    </p>
 
-                    <div id="Acessar" class="IniOculta">
+                    <p id="Acessar" class="IniOculta">
                         Já possui um cadastro?
-                        <p class="botaoCadastrar" onclick="RealizarAcesso()">Acessar</p>
-                    </div>
+                        <button class="botaoCadastrar" onclick="RealizarAcesso()">Acessar</button>
+                    </p>
+
 
                     <div id="ServidoresExternos">
                         <p>Conecte-se com:</p>
@@ -77,20 +78,33 @@
 
     </div>
 
-    <!--RECURSOS DO FIREBASE-->
-    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <div id="Log" class="IniOculta left">
+        <div id="Logado">
+            <img id="ImgUsuario">
+            <h3 id="UsuarioLogadoTitulo" class="text">Usuário autenticado: </h3>
+            <p id="VerificaEmail" class="text"></p>
+            <div id="EnviaVerificaEmail">
+                <button class="CorBotaoCadastrar" onclick="verificaEmail()">Verificar E-mail</button>
+            </div>
+            <button class="CorBotaoCadastrar" onclick="signOut()">Sair</button>
+            <button class="CorBotaoDeletar" onclick="excluirUsuario()">Exluir conta</button>
 
-    <!--RECURSO DA AUTENTICAÇÃO-->
-    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+        </div>
 
-    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+        <!--RECURSOS DO FIREBASE-->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+        <!--RECURSO DA AUTENTICAÇÃO-->
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
 
 
-    <!--MEUS ARQUIVOS JAVASCRIPT-->
-    <script src="JS/firebase.js"></script>
-    <script src="JS/util.js"></script>
-    <script src="JS/autentica.js"></script>
-    
+        <!--MEUS ARQUIVOS JAVASCRIPT-->
+        <script src="JS/firebase.js"></script>
+        <script src="JS/util.js"></script>
+        <script src="JS/autentica.js"></script>
+
 
 </body>
 

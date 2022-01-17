@@ -33,7 +33,7 @@ firebase.auth().onAuthStateChanged(function (user) {
         MostraItem(Log);
         OcultaItem(app);
         UsuarioLogadoTitulo.innerHTML = 'Usuário autenticado: ' + user.email;
-        ImgUsuario.src = user.photoURL ? user.photoURL : 'imagens/usuarioIMG.png'
+        ImgUsuario.src = user.photoURL ? user.photoURL : 'IMGs/usuarioIMG.png'
         if (user.emailVerified) {
             OcultaItem(EnviaVerificaEmail)
             VerificaEmail.innerHTML = 'E-mail Verificado'
