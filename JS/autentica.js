@@ -28,10 +28,11 @@ FrmAutentica.onsubmit = function (event) {
 
 //FUNÇÃO QUE CENTRALIZA E TRATA A AUTENTIFICAÇÃO
 firebase.auth().onAuthStateChanged(function (user) {
-   OcultaItem(Carregando)
+    OcultaItem(Carregando)
     if (user) {
         MostraItem(Log);
         OcultaItem(app);
+
         UsuarioLogadoTitulo.innerHTML = 'Usuário autenticado: ' + user.email;
         ImgUsuario.src = user.photoURL ? user.photoURL : 'IMGs/usuarioIMG.png'
         if (user.emailVerified) {
@@ -41,10 +42,10 @@ firebase.auth().onAuthStateChanged(function (user) {
             MostraItem(EnviaVerificaEmail)
             VerificaEmail.innerHTML = 'E-mail não Verificado'
         }
-       
+
         listaCidade()
     } else {
-        MostraItem(app);
+        MostraItem(app)
         OcultaItem(Log);
     }
 });
@@ -83,13 +84,16 @@ function excluirUsuario() {
         }).finally(function () {
             //OcultaItem(Carregando)
         })
+
+        FrmAutentica.email.value = '';
+        FrmAutentica.senha.value = '';
     }
 }
 
 
-function LoginGoogle(){
+function LoginGoogle() {
     MostraItem(Carregando)
-    firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider()).catch(function(error){
+    firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider()).catch(function (error) {
         alert("Erro de autentificação com o servidor da Google");
         console.log(error)
         OcultaItem(Carregando)

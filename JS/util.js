@@ -12,7 +12,7 @@ var EnviaVerificaEmail = document.getElementById('EnviaVerificaEmail');
 
 var Carregando = document.getElementById("Carregando");
 
-var ImgUsuario = document.getElementById("ImgUsuario");
+var ImgUsuario = document.getElementById("cabecalho-image");
 
 var FrmCidade = document.getElementById('FrmCidade');
 
@@ -26,7 +26,7 @@ function OcultaItem(element) {
 
 function RealizarCadastro() {
     FrmAutentica.FrmAutenticaSubmit.innerHTML = 'Cadastrar uma conta';
-    FrmAutenticaTitulo.innerHTML = 'Insira seu dados para se cadastrar';
+    FrmAutenticaTitulo.innerHTML = 'Insira seus dados abaixo';
 
     OcultaItem(Registrar);
     MostraItem(Acessar);
@@ -34,7 +34,7 @@ function RealizarCadastro() {
 
 function RealizarAcesso() {
     FrmAutentica.FrmAutenticaSubmit.innerHTML = 'Acessar';
-    FrmAutenticaTitulo.innerHTML = 'Acesse a sua conta para continuar';
+    FrmAutenticaTitulo.innerHTML = 'Acesse a sua conta';
 
     OcultaItem(Acessar);
     MostraItem(Registrar);
