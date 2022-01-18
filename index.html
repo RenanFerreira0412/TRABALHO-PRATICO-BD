@@ -76,37 +76,114 @@
             </div>
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
     </div>
 
-    <div id="Log" class="IniOculta cabecalho">
+
+
+
+    <div id="Log" class="IniOculta ">
         <div id="Logado">
 
-            <div class="cabecalho-objetos">
-                <img id="cabecalho-image">
-                <nav class="cabecalho-menu">
-                    <a class="cabecalho-menu-item" onclick="signOut()">Sair</a>
-                    <a class="cabecalho-menu-item" onclick="excluirUsuario()">Exluir conta</a>
-                </nav>
-                <button id="EnviaVerificaEmail" class="cabecalho-menu-item" onclick="verificaEmail()">Verificar
-                    Email</button>
+            <div class="cabecalho">
+                <div class="cabecalho-objetos">
+                    <img id="cabecalho-image">
+                    <nav class="cabecalho-menu">
+                        <a class="cabecalho-menu-item" onclick="signOut()">Sair</a>
+                        <a class="cabecalho-menu-item" onclick="excluirUsuario()">Exluir conta</a>
+                    </nav>
+                    <button id="EnviaVerificaEmail" class="cabecalho-menu-item" onclick="verificaEmail()">Verificar
+                        Email</button>
+                </div>
             </div>
 
-
-            <div class="cabecalho-objetos-02">
+            <div class="objetos-02">
                 <p id="UsuarioLogadoTitulo" class="text ">Usuário autenticado: </p>
                 <p id="VerificaEmail" class="text"></p>
             </div>
+
+            <!--Listagem das cidades cadastradas-->
+
+
+            <div class="cliProdCadastrados">
+                <!--Lista com os clientes cadastrados-->
+                <div>
+                    <p class="text">Clientes cadastrados</p>
+                    <div id="ListaClientes">
+                        <p id="totalClientes" class="text">Total de Clientes</p>
+                        <ul id="ulListaClientes"></ul>
+                    </div>
+                </div>
+
+                <!--Adicionar logo abaixo a lista com os produtos cadastrados-->
+                <div>
+                    <p class="text">Produtos cadastrados</p>
+                    <div id="ListaProdutos">
+                        <p id="totalProdutos" class="text">Total de Produtos</p>
+                        <ul id="ulListaProdutos"></ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <p class="FormText">Formulário para cadastro</p>
+
+            <div class="formClientesProdutos">
+                <!--Formulário para cadastrar novos clientes-->
+                <form id="FrmCliente">
+                    <div id="divFormCliente">
+                        <label for="cli_nome">Nome </label>
+                        <input type="text" placeholder="Nome do cliente..." id="cli_nome">
+
+
+                        <label for="cli_endereco">Endereço </label>
+                        <input type="text" placeholder="Endereço do cliente..." id="cli_endereco">
+
+
+                        <label for="cli_cpf">CPF </label>
+                        <input type="text" placeholder="CPF..." id="cli_cpf">
+
+
+                        <label for="cli_fone">Telefone </label>
+                        <input type="tel" placeholder="Telefone do cliente..." id="cli_fone">
+                    </div>
+                    <button type="submit" id="FrmClienteBtnGravar" class="BtnSalvarInfo">Salvar Cliente</button>
+                </form>
+
+                <!--Divisor vertical-->
+
+
+                <div class="divider02">
+                    <hr />
+                </div>
+
+
+                <!--Formulário para cadastrar novos produtos-->
+                <form id="FrmProduto">
+                    <div id="divFormProduto">
+                        <label for="prod_nome">Nome </label>
+                        <input type="text" placeholder="Nome do produto..." id="prod_nome">
+
+
+                        <label for="prod_qtd">Quantidade </label>
+                        <input type="text" placeholder="Quantidade de produtos..." id="prod_qtd">
+
+
+                        <label for="prod_valor">Valor </label>
+                        <input type="text" placeholder="Valor do produto..." id="prod_valor">
+
+
+                        <label for="prod_fornecedor">Fornecedor(es) </label>
+                        <input type="tel" placeholder="Fornecedor(es) do produto..." id="prod_fornecedor">
+                    </div>
+                    <button type="submit" id="FrmProdutoBtnGravar" class="BtnSalvarInfo">Salvar Produto</button>
+
+                </form>
+
+
+            </div>
+
 
         </div>
     </div>

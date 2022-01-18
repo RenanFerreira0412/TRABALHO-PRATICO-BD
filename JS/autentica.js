@@ -90,7 +90,7 @@ function excluirUsuario() {
     }
 }
 
-
+//Autentificação com o google
 function LoginGoogle() {
     MostraItem(Carregando)
     firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider()).catch(function (error) {
@@ -99,3 +99,25 @@ function LoginGoogle() {
         OcultaItem(Carregando)
     })
 }
+
+//Autentificação com o GitHub
+var provider = new firebase.auth.GithubAuthProvider();
+
+function LoginGitHub() {
+
+    firebase.auth().signInWithPopup(provider)
+        .then((result) => {
+            var token = result.credential.accessToken;
+            var user = result.user;
+
+            console.log(token)
+            console.log(user)
+        }).catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+
+            console.log(error.code)
+            console.log(error.message)
+        });
+}
+

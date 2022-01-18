@@ -161,12 +161,12 @@ p {
     padding: 15px;
 }
 
-.cabecalho-objetos-02 {
+.objetos-02 {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-around;
-    gap: 320px;
+    margin-top: 6px;
 }
 
 .text {
@@ -221,5 +221,72 @@ p {
 .divider.center >:last-child {
     margin-left: 5px;
 }
+
+.FormText{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.formClientesProdutos > form > div > input{
+    border: rgb(129, 129, 129) 1px solid;
+    height: 35px;
+    border-radius: 3px;
+    font-family: 'Bree Serif', serif;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.formClientesProdutos {
+   margin: 10px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   font-family: 'Bree Serif', serif;
+}
+
+
+#FrmCliente {
+    margin-right: 50px;
+}
+
+#FrmProduto {
+   margin-left: 50px;
+}
+
+.divider02 {
+    width: 30%;
+    transform: rotate(90deg);
+    height: 1px;
+    background-color: dimgrey;
+    margin-bottom: 30px;
+  }
+
+
+ .BtnSalvarInfo {
+     border: 0;
+     border-radius: 10px;
+     background-color: dodgerBlue;
+     color: white;
+     font-family: 'Bree Serif', serif;
+     font-size: 18px;
+     width: 180px;
+     height: 30px;
+     text-transform: uppercase;
+     text-align: center;
   
- 
+ }
+
+ .cliProdCadastrados {
+     display: flex;
+     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    text-align: center;
+
+ }
