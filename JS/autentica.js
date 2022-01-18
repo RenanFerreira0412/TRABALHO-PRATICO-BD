@@ -66,7 +66,7 @@ function signOut() {
 function verificaEmail() {
     user = firebase.auth().currentUser;
     user.sendEmailVerification(atualizarUrl).then(function () {
-        alert('E-mail de verificação foi enviado para ' + user.email + 'Verifique a sua caixa de entrada. ')
+        alert('E-mail de verificação foi enviado para ' + user.email + ' Verifique a sua caixa de entrada. ')
     }).catch(function (error) {
         alert('Erro ao enviar e-mail de verificação')
     })

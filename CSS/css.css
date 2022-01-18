@@ -183,6 +183,7 @@ p {
 
 #cabecalho-image {
     height: 100px;
+    border-radius: 100%;
 }
 
 .cabecalho-menu {
