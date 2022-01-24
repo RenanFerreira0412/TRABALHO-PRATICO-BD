@@ -165,8 +165,8 @@ p {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-around;
-    margin-top: 6px;
+    justify-content: space-between;
+    margin: 8px;
 }
 
 .text {
@@ -231,14 +231,19 @@ p {
 
 
 .formClientesProdutos > form > div > input{
-    border: rgb(129, 129, 129) 1px solid;
+    border: #D9D9D9 1px solid;
     height: 35px;
-    border-radius: 3px;
+    border-radius: 8px;
     font-family: 'Bree Serif', serif;
     width: 100%;
     font-size: 15px;
     margin-bottom: 25px;
     margin-top: 5px;
+    background-color: #D9D9D9;
+}
+
+#buttons {
+    text-align: center;
 }
 
 .formClientesProdutos {
@@ -270,16 +275,16 @@ p {
  .BtnSalvarInfo {
      border: 0;
      border-radius: 10px;
-     background-color: dodgerBlue;
+     background-color: #156BAA;
      color: white;
      font-family: 'Bree Serif', serif;
      font-size: 18px;
      width: 180px;
-     height: 30px;
+     padding: 8px;
      text-transform: uppercase;
      text-align: center;
-  
  }
+
 
  .cliProdCadastrados {
      display: flex;
@@ -289,4 +294,9 @@ p {
     margin-top: 40px;
     text-align: center;
 
+ }
+
+ #Log {
+     background-color: white;
+     height: 780px;
  }

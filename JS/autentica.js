@@ -37,10 +37,10 @@ firebase.auth().onAuthStateChanged(function (user) {
         ImgUsuario.src = user.photoURL ? user.photoURL : 'IMGs/usuarioIMG.png'
         if (user.emailVerified) {
             OcultaItem(EnviaVerificaEmail)
-            VerificaEmail.innerHTML = 'E-mail Verificado'
+            VerificaEmail.innerHTML = 'Status de verificação: E-mail Verificado'
         } else {
             MostraItem(EnviaVerificaEmail)
-            VerificaEmail.innerHTML = 'E-mail não Verificado'
+            VerificaEmail.innerHTML = 'Status de verificação: E-mail não Verificado'
         }
 
         listaCidade()

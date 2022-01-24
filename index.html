@@ -97,11 +97,9 @@
             </div>
 
             <div class="objetos-02">
-                <p id="UsuarioLogadoTitulo" class="text ">Usuário autenticado: </p>
+                <p id="UsuarioLogadoTitulo" class="text"></p>
                 <p id="VerificaEmail" class="text"></p>
             </div>
-
-            <!--Listagem das cidades cadastradas-->
 
 
             <div class="cliProdCadastrados">
@@ -114,7 +112,7 @@
                     </div>
                 </div>
 
-                <!--Adicionar logo abaixo a lista com os produtos cadastrados-->
+                <!--Lista com os produtos cadastrados-->
                 <div>
                     <p class="text">Produtos cadastrados</p>
                     <div id="ListaProdutos">
@@ -148,12 +146,14 @@
                         <label for="cli_fone">Telefone </label>
                         <input type="tel" placeholder="Telefone do cliente..." id="cli_fone">
                     </div>
-                    <button type="submit" id="FrmClienteBtnGravar" class="BtnSalvarInfo">Salvar Cliente</button>
+
+                    <div id="buttons">
+                        <button type="submit" id="FrmClienteBtnGravar" class="BtnSalvarInfo">Salvar Cliente</button>
+                    </div>
                 </form>
 
+
                 <!--Divisor vertical-->
-
-
                 <div class="divider02">
                     <hr />
                 </div>
@@ -177,11 +177,11 @@
                         <label for="prod_fornecedor">Fornecedor(es) </label>
                         <input type="tel" placeholder="Fornecedor(es) do produto..." id="prod_fornecedor">
                     </div>
-                    <button type="submit" id="FrmProdutoBtnGravar" class="BtnSalvarInfo">Salvar Produto</button>
 
+                    <div id="buttons">
+                        <button type="submit" id="FrmProdutoBtnGravar" class="BtnSalvarInfo">Salvar Produto</button>
+                    </div>
                 </form>
-
-
             </div>
 
 
