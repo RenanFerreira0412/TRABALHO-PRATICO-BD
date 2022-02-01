@@ -275,7 +275,7 @@ p {
  .BtnSalvarInfo {
      border: 0;
      border-radius: 10px;
-     background-color: #156BAA;
+     background-color: #004AAD;
      color: white;
      font-family: 'Bree Serif', serif;
      font-size: 18px;
@@ -312,17 +312,12 @@ li:hover {
     border-radius: 8px;
 }
 
-
-.listaBtn {
-    float: right;
-    margin: 0 0 0 4px;
-    position: relative;
-    bottom: 3px;
-}
-
 ul {
     overflow: hidden;
     overflow-y: scroll;
-    height: 15em;
+    height: 10em;
+    width: 450px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
 }
 
