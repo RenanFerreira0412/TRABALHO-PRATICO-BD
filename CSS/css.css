@@ -300,3 +300,29 @@ p {
      background-color: white;
      height: 780px;
  }
+
+li {
+    padding: 10px;
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+}
+
+li:hover {
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+
+.listaBtn {
+    float: right;
+    margin: 0 0 0 4px;
+    position: relative;
+    bottom: 3px;
+}
+
+ul {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 15em;
+}
+

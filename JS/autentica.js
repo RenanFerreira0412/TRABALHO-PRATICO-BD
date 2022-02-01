@@ -43,7 +43,8 @@ firebase.auth().onAuthStateChanged(function (user) {
             VerificaEmail.innerHTML = 'Status de verificação: E-mail não Verificado'
         }
 
-        listaCidade()
+        listaCliente()
+        listaProduto()
     } else {
         MostraItem(app)
         OcultaItem(Log);
